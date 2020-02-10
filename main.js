@@ -31,20 +31,15 @@ for (let i = 0; i < list_item.length; i++) {
 
     list.addEventListener("dragenter", function(ev) {
       ev.preventDefault();
-      /*  this.style.backgroundColor = "rgba(0,0,0,0.2)";  */
-      /* this.style.backgroundColor = "rgba(255,255,255)"; */
       this.style.backgroundColor = "rgba(218, 220, 227, 0.77)";
     });
 
     list.addEventListener("dragleave", function(ev) {
-      /*  this.style.backgroundColor = "rgba(0,0,0,0.1)"; */
       this.style.backgroundColor = "rgba(255,255,255)";
     });
 
     list.addEventListener("drop", function(ev) {
       this.append(draggedItem);
-      /* this.style.backgroundColor = "rgba(0,0,0,0.1)"; */
-      /* this.style.backgroundColor = "rgba(255,255,255,0.9)"; */
       this.style.backgroundColor = "rgba(255,255,255)";
     });
   }
